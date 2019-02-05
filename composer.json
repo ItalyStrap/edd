@@ -1,0 +1,20 @@
+{
+    "name": "italystrap/edd",
+    "description": "Updater plugin for the ItalyStrap Framework",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "overclokk",
+            "email": "info@overclokk.net"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ItalyStrap\\EDD\\": "src/EDD/"
+        },
+        "files": [
+            "src/bootstrap.php"
+        ]
+    }
+}
