@@ -5,14 +5,14 @@
  * @package EDD Sample Theme
  */
 
-namespace ItalyStrap\EDD;
+namespace ItalyStrap\EDD\Theme;
 
 use InvalidArgumentException;
 
 /**
  * Theme_Updater_Factory
  */
-class Theme_Updater_Factory {
+class Updater_Factory {
 
 	/**
 	 * Create instance
@@ -43,6 +43,6 @@ class Theme_Updater_Factory {
 			}
 		}
 
-		return new Theme_Updater_Admin( $edd_config['config'], $edd_config['strings'] );
+		return new Updater_Admin( $edd_config['config'], $edd_config['strings'] );
 	}
 }

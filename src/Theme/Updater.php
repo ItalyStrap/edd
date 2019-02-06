@@ -6,9 +6,9 @@
  * @version 1.0.3
  */
 
-namespace ItalyStrap\EDD;
+namespace ItalyStrap\EDD\Theme;
 
-class Theme_Updater {
+class Updater {
 
 	private $remote_api_url;
 	private $request_data;

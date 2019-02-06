@@ -2,6 +2,8 @@
 
 namespace ItalyStrap\EDD;
 
+use ItalyStrap\EDD\Theme\Updater_Manager;
+
 /**
  * This is a means of catching errors from the activation method above and displyaing it to the customer
  */
@@ -39,7 +41,7 @@ function register() {
 	 */
 	$configs = (array) apply_filters( 'italystrap_theme_updater_config', [] );
 
-	$register = new Theme_Updater_Manager( $configs );
+	$register = new Updater_Manager( $configs );
 	$register->register();
 }
 

@@ -6,10 +6,10 @@
  * Time: 11:18
  */
 
-namespace ItalyStrap\EDD;
+namespace ItalyStrap\EDD\Theme;
 
 
-class Theme_Updater_Manager {
+class Updater_Manager {
 
 	private $configs = [];
 
@@ -24,7 +24,7 @@ class Theme_Updater_Manager {
 	 */
 	private function merge_with_default( array $config ) {
 
-		$default = (array) require 'config/theme.php';
+		$default = (array) require __DIR__ . '/../config/theme.php';
 
 		foreach ( $config as $k => $v ) {
 			$config[ $k ] = array_merge( $default[ $k ], $v );
@@ -51,7 +51,7 @@ class Theme_Updater_Manager {
 			$done = $config['config']['theme_slug'];
 
 			try {
-				Theme_Updater_Factory::create( $config );
+				Updater_Factory::create( $config );
 			} catch ( \InvalidArgumentException $exception ) {
 				add_action( 'admin_notices', function () use ( $exception ) {
 					printf(

@@ -1,6 +1,6 @@
 <?php
 /**
- *	Plugin Name:	ItalyStrap Updater
+ *	Plugin Name:	ItalyStrap EDD Updater
  *	Plugin URI:		https://italystrap.com
  *	Description:	Plugin for the updating of ItalyStrap Framework
  *	Version:		1.0.0

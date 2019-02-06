@@ -11,7 +11,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "ItalyStrap\\EDD\\": "src/EDD/"
+            "ItalyStrap\\EDD\\": "src/"
         },
         "files": [
             "src/bootstrap.php"

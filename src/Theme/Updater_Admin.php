@@ -5,9 +5,9 @@
  * @package EDD Sample Theme
  */
 
-namespace ItalyStrap\EDD;
+namespace ItalyStrap\EDD\Theme;
 
-class Theme_Updater_Admin {
+class Updater_Admin {
 
 	/**
 	 * Variables required for the theme updater
@@ -85,7 +85,7 @@ class Theme_Updater_Admin {
 			return;
 		}
 
-		new Theme_Updater(
+		new Updater(
 			array(
 				'remote_api_url' 	=> $this->remote_api_url,
 				'theme_slug'        => $this->theme_slug,
