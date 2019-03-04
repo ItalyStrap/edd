@@ -8,6 +8,8 @@
 
 namespace ItalyStrap\EDD\Theme;
 
+use stdClass;
+
 class Updater {
 
 	private $remote_api_url;
