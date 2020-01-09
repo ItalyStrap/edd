@@ -33,5 +33,3 @@ function italystrap_updater_init() {
 }
 
 \add_action( 'plugins_loaded', 'italystrap_updater_init' );
-
-//italystrap_updater_init();

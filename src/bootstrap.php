@@ -5,20 +5,20 @@ namespace ItalyStrap\EDD;
 
 use ItalyStrap\EDD\Theme\Updater_Manager;
 
-if ( ! function_exists( 'add_action' ) ) {
+if ( ! \function_exists( 'add_action' ) ) {
 	return null;
 }
 /**
  * This is a means of catching errors from the activation method above and displyaing it to the customer
  */
 function notices() {
-	if ( array_key_exists( 'sl_theme_activation', $_GET ) && ! empty( $_GET['message'] ) ) {
+	if ( \array_key_exists( 'sl_theme_activation', $_GET ) && ! empty( $_GET['message'] ) ) {
 
 		switch( $_GET['sl_theme_activation'] ) {
 
 			case 'false':
-				$message = urldecode( $_GET['message'] );
-				printf(
+				$message = \urldecode( $_GET['message'] );
+				\printf(
 					'<div class="error"><p>%s</p></div>',
 					$message
 				);
@@ -40,6 +40,7 @@ function notices() {
  *
  */
 function register() {
+
 	/**
 	 * @var array $configs
 	 */
