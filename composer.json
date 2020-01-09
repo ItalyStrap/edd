@@ -1,7 +1,7 @@
 {
     "name": "italystrap/edd",
     "description": "Updater plugin for the ItalyStrap Framework",
-    "type": "wordpress-plugin",
+    "type": "library",
     "authors": [
         {
             "name": "overclokk",
