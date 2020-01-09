@@ -1,9 +1,13 @@
 <?php
+declare(strict_types=1);
 
 namespace ItalyStrap\EDD;
 
 use ItalyStrap\EDD\Theme\Updater_Manager;
 
+if ( ! function_exists( 'add_action' ) ) {
+	return null;
+}
 /**
  * This is a means of catching errors from the activation method above and displyaing it to the customer
  */
@@ -30,7 +34,7 @@ function notices() {
 	}
 }
 
-add_action( 'admin_notices', __NAMESPACE__ . '\notices' );
+\add_action( 'admin_notices', __NAMESPACE__ . '\notices' );
 
 /**
  *
@@ -45,4 +49,4 @@ function register() {
 	$register->register();
 }
 
-add_action( 'after_setup_theme', __NAMESPACE__ . '\register' );
+\add_action( 'after_setup_theme', __NAMESPACE__ . '\register' );

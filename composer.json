@@ -1,14 +1,31 @@
 {
     "name": "italystrap/edd",
     "description": "Updater plugin for the ItalyStrap Framework",
+    "keywords": ["wordpress","edd","update"],
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "overclokk",
-            "email": "info@overclokk.net"
+            "email": "info@overclokk.net",
+            "homepage": "https://www.italystrap.com",
+            "role": "Developer"
         }
     ],
-    "require": {},
+    "minimum-stability": "stable",
+    "require": {
+        "php" : ">=7.2"
+    },
+    "require-dev": {
+        "lucatume/wp-browser": "~2.2",
+        "lucatume/function-mocker-le": "^1.0",
+        "italystrap/debug": "~2.0",
+        "wp-coding-standards/wpcs": "^2.1",
+        "phpcompatibility/php-compatibility": "*",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+        "phpstan/phpstan": "^0.12",
+        "szepeviktor/phpstan-wordpress": "^0.5"
+    },
     "autoload": {
         "psr-4": {
             "ItalyStrap\\EDD\\": "src/"
@@ -16,5 +33,18 @@
         "files": [
             "src/bootstrap.php"
         ]
+    },
+    "scripts": {
+        "check": [
+            "phpcs -p -s --standard=phpcs.xml src",
+            "phpstan analyse"
+        ],
+        "test": [
+            "test"
+        ]
+    },
+    "support"    : {
+        "issues": "https://github.com/ItalyStrap/settings/issues",
+        "source": "https://github.com/ItalyStrap/settings"
     }
 }
