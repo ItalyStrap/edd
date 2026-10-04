@@ -22,6 +22,8 @@ class Updater_Admin {
 	protected $download_id = null;
 	protected $renew_url = null;
 	protected $strings = null;
+	protected $item_name = null;
+	protected $beta = null;
 
 	/**
 	 * Initialize the class.
