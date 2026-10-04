@@ -19,6 +19,9 @@ class Updater {
 	private $license_key;
 	private $version;
 	private $author;
+	private $item_name;
+	private $license;
+	private $beta;
 	protected $strings = null;
 
 
